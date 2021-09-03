@@ -8,8 +8,10 @@ let dice = {roll:function(player){return Math.floor(Math.random()*DIE)+1}};
 function diceGame(p1name,p2name,round){
     player1 = new Object(player1)
     player1.name = p1name;
+    player1.wincount=0;
     player2 = new Object(player2)
     player2.name = p2name;
+    player2.wincount=0;
     let count=0;
 
     //roll a dice,loop for round
@@ -48,12 +50,12 @@ function diceGame(p1name,p2name,round){
     console.log(player2)
     console.log('Winner : '+ winner)
     console.log('-------------------------------------')
-    diceGame('Carls','Peter',4)
+    diceGame('Carls','Peter',3)
     console.log(player1)
     console.log(player2)
     console.log('Winner : '+ winner)
     console.log('-------------------------------------')
-    diceGame('Henry','Richard',5)
+    diceGame('Henry','Richard',4)
     console.log(player1)
     console.log(player2)
     console.log('Winner : '+ winner)
